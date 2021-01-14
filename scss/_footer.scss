@@ -1,0 +1,236 @@
+.footer{
+    &__about-company{
+        padding-left: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: 60px;
+    }
+    &__about-company-item{
+        &--text{
+            margin-bottom: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+        &--title{
+            margin-bottom: 22px;
+            color: #fff;
+        }
+    }
+    &__catalog{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        &-item{
+            &--text{
+                margin-bottom: 20px;
+                color: #959595;
+                text-decoration: none;
+            }
+            &--title{
+                margin-bottom: 22px;
+                color: #ff7c0c;
+            }
+        }
+    }
+    &__contacts{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        text-align: right;
+    }
+    &__contacts-button{
+        color: #fff;
+        border-width: 1px;
+        border-color: rgb(255, 124, 12);
+        background-color: transparent;
+    }
+    &__contacts-img{}
+    &__contacts-inner{
+        margin-bottom: 40px;
+    }
+    &__contacts-item{
+        &--icon{}
+        &--text{
+            font-family: "Source Sans Pro Regular";
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    &__copy-copyright{
+        &--text{
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0.7em;
+            padding-bottom: 0.7em;
+            -webkit-box-flex: 0;
+            font-family: "Source Sans Pro Regular";
+            font-size: 15px;
+            color: #959595;
+        }
+    }
+    &__copy-dev{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &--img{
+            width: 90px;
+            margin-left: 10px;
+        }
+        &--text{
+            font-family: "Source Sans Pro Bold";
+            font-size: 15px;
+            color: #959595;
+        }
+    }
+    &__copy-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+        padding-right: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__information{
+        padding-left: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: 60px;
+    }
+    &__information-item{
+        &--text{
+            margin-bottom: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+        &--title{
+            margin-bottom: 22px;
+            color: #fff;
+        }
+    }
+    &__item{
+        &--icon{}
+        &--text{
+            display: block;
+            font-family: "Source Sans Pro Regular";
+            font-size: 15px;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+        &--title{
+            font-family: "Source Sans Pro Black";
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;   
+        }
+    }
+    &__left-col{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 130px;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        background-color: #ff7c0c;
+        box-shadow: 32px 0px 117px 0px rgba(255, 124, 12, 0.22);
+        z-index: 1;
+    }
+    &__logo{
+        padding-left: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+        &-img{
+            
+        }
+    }
+    &__manufacturer{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        &-item{
+            &--text{
+                margin-bottom: 20px;
+                color: #959595;
+                text-decoration: none;
+            }
+            &--title{
+                margin-bottom: 22px;
+                color: #ff7c0c;
+            }
+        }
+    }
+    &__right-col{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 130px;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        background-color: #10100f;
+        background-image: url("../../assets/images/bg-img-4.png");
+        background-repeat: repeat-y;
+        &-row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-left: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+            padding-right: calc(15px + (180 - 15) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

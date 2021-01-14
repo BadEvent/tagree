@@ -1,0 +1,75 @@
+.edge{
+    margin-bottom: -250px;
+    &__col{
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 33.333333%;
+        flex: 1 0 33.333333%;
+        &-content{
+            display: block;
+        }
+        &--black{
+            border-radius: 3px;
+            max-width: 465px;
+            height: 465px;
+            display: flex;
+            align-items: center;
+            //padding-left: 6.250em;
+            padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+            background-color: #10100f;
+            background-image: url("../images/bg-img-4.png");
+            background-repeat: no-repeat;
+            box-shadow: 32px 32px 117px 0px rgba(16,16,15,0.22);
+        }
+        &--green{
+            border-radius: 3px;
+            height: 465px;
+            max-width: 465px;
+            display: flex;
+            align-items: center;
+            padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+            background-color: #00b557;
+            background-image: url("../images/bg-img-3.png");
+            background-repeat: no-repeat;
+            box-shadow: 32px 32px 117px 0px rgba(0,181,87,0.22);
+        }
+        &--orange{
+            border-radius: 3px;
+            height: 465px;
+            max-width: 465px;
+            display: flex;
+            align-items: center;
+            padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+            background-color: #ff7c0c;
+            background-image: url("../images/bg-img-1.png");
+            background-repeat: no-repeat;
+            box-shadow: 32px 32px 117px 0px rgba(255,124,12,0.22);
+        }
+    }
+    &__col-text{
+        font-size: 24px;
+        font-family: "Source Sans Pro Bold";
+        color: #fff;
+    }
+    &__col-year{
+        font-size: 60px;
+        font-family: "Source Sans Pro Bold";
+        color: #fff;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        justify-content: space-between;
+    }
+}

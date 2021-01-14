@@ -1,0 +1,64 @@
+.about{
+    background-blend-mode: color;
+    background-image: url("../images/header__bg.jpg");
+    background-size: cover;
+    background-color: rgba(255,255,255,0.902);
+    padding-bottom: 200px;
+    padding-top: 370px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    &__content-button{
+        border-width: 1px;
+        border-color: rgb(255, 124, 12);
+        color: #000;
+        background-color: transparent;
+        font-size: 16px;
+        font-family: "Source Sans Pro Black";
+    }
+    &__content-text{
+        font-size: 16px;
+        font-family: "Source Sans Pro Regular";
+        color: rgb(118, 118, 118);
+        margin-bottom: 70px;
+        max-width: 400px;
+    }
+    &__content-title{
+        font-size: 24px;
+        font-family: "Source Sans Pro Bold";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+    &__header{
+        padding-bottom: 100px;
+    }
+    &__header-inner{
+        display: flex;
+    }
+    &__header-title{
+        color: rgb(0, 0, 0);
+    }
+    &__image{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        &--img{
+            max-width: 100%;
+        }
+    }
+    &__text{
+        padding-left: 100px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
