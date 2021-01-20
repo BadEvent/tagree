@@ -146,6 +146,7 @@ body {
   background-color: white;
   -webkit-box-shadow: 0px 6px 30px 0px rgba(255, 124, 12, 0.22);
           box-shadow: 0px 6px 30px 0px rgba(255, 124, 12, 0.22);
+  padding-left: 39px;
 }
 
 .catalog__item {
@@ -171,8 +172,17 @@ body {
   max-width: 29px;
 }
 
+.catalog__item-text {
+  font-family: 'Source Sans Pro Regular';
+  font-size: 14px;
+  color: #767676;
+}
+
 .catalog__item-title {
   display: list-item;
+  font-family: 'Source Sans Pro Black';
+  font-size: 16px;
+  color: #000;
 }
 
 .catalog__row-items {

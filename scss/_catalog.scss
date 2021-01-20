@@ -4,6 +4,7 @@
     border-radius: 3px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 30px 0px rgba(255, 124, 12, 0.22);
+    padding-left: 39px;
     &__item{
         flex-basis: 0;
         -webkit-box-flex: 1;
@@ -23,9 +24,16 @@
                 max-width: 29px;
             }
         }
-        &-text{}
+        &-text{
+            font-family: 'Source Sans Pro Regular';
+            font-size: 14px;
+            color: #767676;
+        }
         &-title{
             display: list-item;
+            font-family: 'Source Sans Pro Black';
+            font-size: 16px;
+            color: #000;
         }
     }
     &__row-items{
