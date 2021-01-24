@@ -1,0 +1,102 @@
+.button__cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7c0c;
+    width: 200px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+.cart{
+    &__icon{
+        position: relative;
+        &-count{
+            position: absolute;
+            font-family: 'Source Sans Pro Bold';
+            font-size: 10px;
+            letter-spacing: normal;
+            color: #fff;
+            background-color: #ed1c24;
+            border-radius: 7px;
+            width: 20px;
+            height: 14px;
+            top: -3px;
+            left: 13px;
+        }
+    }
+    &__text{color: #fff;}
+}
+.contacts{
+    
+    &__inner{
+        display: flex;
+    }
+    &__nomber{
+        font-family: 'Source Sans Pro Regular';
+        font-size: 24px;
+        color: #fff;
+    }
+    &__phones{}
+}
+.header{
+    min-height: 768px;
+    background-image: url('../images/bg-banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__content{}
+    &__top{
+        &-inner{
+            display: flex;
+            flex-basis: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 90px;
+            padding-right: 98px;
+            border-bottom: 1px solid #868689;
+        }
+    }
+}
+.logo{
+    
+    &__img{
+        max-width: 100%;
+    }
+    &__link{}
+}
+.menu{
+    
+    &__link{
+        font-family: 'Source Sans Pro Black';
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-decoration: none;       
+        &--active{}
+        &--dropdown{}
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        &-item{
+            margin-left: 10px;
+        }
+    }
+}
+.search{
+    display: flex;
+    align-items: center;
+    &__icon{
+        margin-right: 15px;
+    }
+    &__title{
+        font-family: 'Source Sans Pro Regular';
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.502);
+        letter-spacing: 0.2em;
+    }
+}
