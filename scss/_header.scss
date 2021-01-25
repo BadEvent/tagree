@@ -52,7 +52,44 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    &__content{}
+    &__content{
+        &-inner{
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+    }
+    &__content-back-to-up{}
+    &__content-button{
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #ff7c0c;
+        margin-top: 75px;
+    }
+    &__content-slider-controlls{
+        &--dot{}
+    }
+    &__content-tag{
+        border-radius: 3px;
+        background-color: rgb(255, 124, 12);
+        display: inline-block;
+        font-family: 'Source Sans Pro Light';
+        font-size: 14px;
+        color: #fff;
+        padding: 4px 16px;
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+    &__content-text{
+        font-family: 'Source Sans Pro Black';
+        font-size: 24px;
+        color: #fff;
+        margin-top: 21px;
+        max-width: 440px;
+    }
+    &__content-title{
+        color: #fff;
+        margin-top: 32px;
+    }
     &__top{
         &-inner{
             display: flex;
@@ -67,6 +104,10 @@
             padding-bottom: 19px;
         }
     }
+}
+.back-to-up{}
+.slider-controlls{
+    &--dot{}
 }
 .logo{
     position: relative;
