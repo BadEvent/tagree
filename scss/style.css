@@ -977,6 +977,10 @@ body {
   }
 }
 
+.news {
+  margin: 110px;
+}
+
 .news__content {
   margin-bottom: 1px;
 }
