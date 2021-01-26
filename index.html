@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="scss/style.css">
+	<link rel="stylesheet" href="plugins/owl/owl.carousel.min.css">
 	<title>test</title>
 </head>
 
@@ -85,7 +86,7 @@
 					<button class="button header__content-button">
 						Узнать больше
 					</button>
-					
+
 					<div class="slider-controlls header__content-slider-controlls">
 						<div class="slider-controlls__arrow slider-controlls__arrow-left">
 							<img class="slider-controlls__arrow-left--img" src="images/arrow-left.png" alt="">
@@ -95,7 +96,11 @@
 						</div>
 					</div>
 					<div class="slider-empty__block"></div>
-					<div class="slider-controlls--dots header__content-slider-controlls--dot"></div>
+					<div class="slider-controlls-dots">
+						<div class="slider-controlls-dots-dot"></div>
+						<div class="slider-controlls-dots-dot slider-controlls-dots-dot--active"></div>
+						<div class="slider-controlls-dots-dot"></div>
+					</div>
 				</div>
 			</div>
 
@@ -145,7 +150,14 @@
 		</section>
 		<section class="brand">
 			<div class="brand__row">
-
+				<div class="owl-carousel owl-theme owl-loaded owl-drag owl-reponsive">
+					<img class="brand__image" src="images/brands/cygwayon.png" alt="">
+					<img class="brand__image" src="images/brands/fujitsu.png" alt="">
+					<img class="brand__image" src="images/brands/symbolmark.png" alt="">
+					<img class="brand__image" src="images/brands/te.png" alt="">
+					<img class="brand__image" src="images/brands/vtouch.png" alt="">
+					<img class="brand__image" src="images/brands/winbond.png" alt="">
+				</div>
 			</div>
 		</section>
 		<section class="news">
@@ -398,6 +410,34 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.js"
 		integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
 	<script src="js/header.js"></script>
+	<script src="plugins/owl/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				autoplay: false,
+				autoplayTimeout: 2000,
+				autoplaySpeed: 2000,
+				autoplayHoverPause: true,
+				slideTransition: 'linear',
+				items: 2,
+				nav: false,
+				dots: false,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					600: {
+						items: 3,
+						autoplay: true,
+					},
+					1000: {
+						items: 6,
+					}
+				}
+			});
+		});
+
+	</script>
 </body>
 
 </html>
