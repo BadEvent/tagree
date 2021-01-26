@@ -73,3 +73,61 @@
         justify-content: space-between;
     }
 }
+@media (max-width: 1300px){
+    .edge{
+        &__col{
+            padding-left: 12px;
+            padding-right: 12px;
+            &--black{
+                height: 365px;
+                max-width: 365px;
+                padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+            }
+            &--green{
+                height: 365px;
+                max-width: 365px;
+                padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+            }
+            &--orange{
+                height: 365px;
+                max-width: 365px;
+                padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .edge{
+        &__col{
+            padding-left: 7px;
+            padding-right: 7px;
+            &--black{
+                height: 223px;
+                width: 223px;
+                padding-left: calc(36px + (100 - 36) * ((100vw - 768px) / (1920 - 768)));
+            }
+            &--green{
+                height: 223px;
+                width: 223px;
+                padding-left: calc(36px + (100 - 36) * ((100vw - 768px) / (1920 - 768)));
+            }
+            &--orange{
+                height: 223px;
+                width: 223px;
+                padding-left: calc(36px + (100 - 36) * ((100vw - 768px) / (1920 - 768)));
+
+            }
+        }
+        &__col-text{
+            font-size: 24px;
+        }
+        &__col-year{
+            font-size: 48px;
+        }
+        &__row{
+            overflow-x: scroll;
+            flex-wrap: nowrap;
+        }
+    }
+}
