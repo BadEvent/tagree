@@ -578,6 +578,10 @@ body {
   color: #ff7c0c;
 }
 
+.footer__compressed {
+  display: none;
+}
+
 .footer__contacts {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
@@ -874,6 +878,69 @@ body {
     -webkit-box-flex: 0;
     margin-bottom: 0;
   }
+  .footer__catalog {
+    display: none;
+  }
+  .footer__copy-row {
+    display: none;
+  }
+  .footer__compressed {
+    display: block;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    -webkit-box-flex: 0;
+  }
+  .footer__compressed-link {
+    padding-bottom: 40px;
+  }
+  .footer__compressed--link {
+    color: #ff7c0c;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro Black';
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .footer__compressed-links {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-flex: 0;
+    margin-bottom: 0;
+  }
+  .footer__compressed-copy-dev {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__contacts {
+    text-align: right;
+  }
+  .footer__left-col {
+    display: none;
+  }
+  .footer__manufacturer {
+    display: none;
+  }
+  .footer__right-col {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 422px) {
   .footer__contacts {
     text-align: left;
   }
@@ -1387,6 +1454,13 @@ body {
   font-size: 40px;
   font-family: "Source Sans Pro Bold";
   padding-bottom: 30px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.news__content-left-col-title:hover {
+  opacity: 0.5;
 }
 
 .news__content-right-col-content {
@@ -1434,6 +1508,13 @@ body {
   font-family: "Source Sans Pro Bold";
   color: #000;
   font-size: 30px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.news__content-right-col-title:hover {
+  opacity: 0.5;
 }
 
 .news__content-row {
