@@ -930,7 +930,7 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    min-height: 560px;
+    min-height: calc(560px + 80);
   }
   .header__content {
     padding-left: 40px;
@@ -1215,71 +1215,6 @@ body {
 }
 
 @media (max-width: 1300px) {
-  .container {
-    max-width: 1140px;
-  }
-  .edge__col {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  .edge__col--black {
-    height: 365px;
-    max-width: 365px;
-    padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
-  }
-  .edge__col--green {
-    height: 365px;
-    max-width: 365px;
-    padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
-  }
-  .edge__col--orange {
-    height: 365px;
-    max-width: 365px;
-    padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
-  }
-  .footer__about-company, .footer__information, .footer__logo {
-    padding-left: 64px;
-  }
-  .footer__left-col {
-    -ms-flex: 0 0 28%;
-    -webkit-box-flex: 0;
-            flex: 0 0 28%;
-    max-width: 28%;
-  }
-  .footer__right-col {
-    -ms-flex: 0 0 72%;
-    -webkit-box-flex: 0;
-            flex: 0 0 72%;
-    max-width: 72%;
-  }
-  .footer__right-col-row {
-    padding-right: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
-    padding-left: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
-  }
-  .footer__copy-row {
-    padding-right: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
-    padding-left: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
-  }
-  .about__content {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow: hidden;
-  }
-  .about__text {
-    padding-left: 30px;
-    -ms-flex: 0 0 420px;
-    -webkit-box-flex: 0;
-            flex: 0 0 420px;
-    max-width: 420px;
-    width: 420px;
-  }
-  .about__image {
-    -ms-flex: 0 0 517px;
-    -webkit-box-flex: 0;
-            flex: 0 0 517px;
-    max-width: 517px;
-    width: 517px;
-  }
   .news__content {
     margin-bottom: 1px;
   }
@@ -1322,6 +1257,7 @@ body {
   }
   .news__content-left-col-image--img {
     max-width: 100%;
+    width: 100%;
   }
   .news__content-left-col-text {
     color: #767676;
@@ -1348,21 +1284,20 @@ body {
   }
   .news__content-right-col-image {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333%;
-    flex: 0 0 33.333%;
+    -ms-flex: 1 1 33.333%;
+    flex: 1 1 33.333%;
     max-width: 33.333%;
   }
   .news__content-right-col-image--img {
     max-width: 100%;
+    width: 100%;
   }
   .news__content-right-col-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-bottom: 45px;
   }
   .news__content-right-col-text {
@@ -1428,6 +1363,117 @@ body {
     margin-right: 0;
     margin-left: 0;
   }
+}
+
+@media (max-width: 768px) {
+  .news__content-right-col-title {
+    font-size: 24px;
+  }
+  .news__content-right-col-image, .news__content-right-col-content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .news__header {
+    margin-bottom: 32px;
+  }
+  .news__content-right-col-content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .news__content-left-col-title {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .news__content-left-col-text {
+    font-size: 16px;
+  }
+  .news__content-left-col-image {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .news__content-left-col-date {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .news__content-right-col-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1140px;
+  }
+  .edge__col {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .edge__col--black {
+    height: 365px;
+    max-width: 365px;
+    padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+  }
+  .edge__col--green {
+    height: 365px;
+    max-width: 365px;
+    padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+  }
+  .edge__col--orange {
+    height: 365px;
+    max-width: 365px;
+    padding-left: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+  }
+  .footer__about-company, .footer__information, .footer__logo {
+    padding-left: 64px;
+  }
+  .footer__left-col {
+    -ms-flex: 0 0 28%;
+    -webkit-box-flex: 0;
+            flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .footer__right-col {
+    -ms-flex: 0 0 72%;
+    -webkit-box-flex: 0;
+            flex: 0 0 72%;
+    max-width: 72%;
+  }
+  .footer__right-col-row {
+    padding-right: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    padding-left: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+  }
+  .footer__copy-row {
+    padding-right: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    padding-left: calc(25px + (100 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+  }
+  .about__content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .about__text {
+    padding-left: 30px;
+    -ms-flex: 0 0 420px;
+    -webkit-box-flex: 0;
+            flex: 0 0 420px;
+    max-width: 420px;
+    width: 420px;
+  }
+  .about__image {
+    -ms-flex: 0 0 517px;
+    -webkit-box-flex: 0;
+            flex: 0 0 517px;
+    max-width: 517px;
+    width: 517px;
+  }
+}
+
+@media (max-width: 992px) {
   .footer__left-col {
     -ms-flex: none;
     -webkit-box-flex: 0;
@@ -1524,35 +1570,11 @@ body {
   .about__image {
     display: none;
   }
-  .news__content-right-col-title {
-    font-size: 24px;
-  }
-  .news__content-right-col-image, .news__content-right-col-content {
-    -ms-flex: none;
-    -webkit-box-flex: 0;
-            flex: none;
-    max-width: none;
-  }
 }
 
 @media (max-width: 320px) {
-  .news__content-left-col-title {
-    font-size: 24px;
-    padding-bottom: 15px;
-  }
-  .news__content-left-col-text {
-    font-size: 16px;
-  }
-  .news__content-left-col-image {
-    font-size: 16px;
-    padding-bottom: 15px;
-  }
-  .news__content-left-col-date {
-    font-size: 16px;
-    padding-bottom: 10px;
-  }
   .container {
-    max-width: 282px;
+    max-width: 312px;
   }
   .about__header {
     padding-bottom: 10px;
