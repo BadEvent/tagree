@@ -12,7 +12,23 @@ body{
     padding-right: 15px;
     margin: 0 auto;
 }
-
+.back-to-top{
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #ffffff33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
