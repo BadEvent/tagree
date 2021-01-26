@@ -616,6 +616,10 @@ body {
   color: #fff;
 }
 
+.footer__copy-under-contacts {
+  display: none;
+}
+
 .footer__copy-copyright--text {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
@@ -943,6 +947,12 @@ body {
 @media (max-width: 422px) {
   .footer__contacts {
     text-align: left;
+  }
+  .footer__compressed-copy {
+    display: none;
+  }
+  .footer__copy-under-contacts {
+    display: block;
   }
 }
 
